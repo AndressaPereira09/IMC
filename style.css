@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Dancing+Script:wght@500&family=Gloock&family=Righteous&display=swap');
+
+* {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2.5px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(https://images.pexels.com/photos/7209170/pexels-photo-7209170.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    font-size: 31px;
+    padding: 20px;
+    margin-bottom: 7%;
+}
+
+#peso {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+}
+
+#altura {
+    width: 300px;
+    height: 30px;
+    margin: 30px 0 40px 55px;
+}
+
+div {
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(240, 242, 245, 0.5);
+    padding: 20px;
+    width: 700px;
+    border-radius: 20px;
+}
+
+p {
+    font-size: 22px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    opacity: 0.5;
+}

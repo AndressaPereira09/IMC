@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+
+<body>
+    <header>
+        <h1>Índice de massa corporal</h1>
+    </header>
+
+    <div>
+        <label for="peso">Peso (kg)</label>
+        <input type="number" id="peso" name="peso">
+        <br>
+        <label for="altura">Altura</label>
+        <input type="number" id="altura" name="altura">
+        <br>
+        <button onclick="calcularImc()">Calcular</button>
+    </div>
+    <br>
+    <div>
+        <p>Seu índice de massa corporal é: <span id="resultado"></span></p>
+    </div>
+
+    <footer>
+        <h3>By Andressa Pereira</h3>
+        <a href="mailto:email@andressapereiradossantos09@gmail.com">andressapereiradossantos09@gmail.com</a>
+    </footer>
+
+    <script>
+        function calcularImc() {
+            const peso = window.document.getElementById("peso").value
+            const altura = window.document.getElementById("altura").value
+            const imc = peso / (altura ** 2)
+            document.getElementById("resultado").textContent = imc.toFixed(2)
+        }
+
+        let tituloDinamico = document.title;
+        window.addEventListener("blur", () => {
+            document.title = "Volta amor"
+        }) //Mudar o titulo da janela ao ir para outra guia.
+
+        window.addEventListener("focus", () => {
+            document.title = tituloDinamico
+        }) //Voltar ao titulo original 
+
+    </script>
+
+
+</body>
+
+</html>
